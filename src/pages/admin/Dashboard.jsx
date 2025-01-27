@@ -24,7 +24,8 @@ const Dashboard = () => {
         `${server}/api/v1/admin/stats`,
         "dashboard-stats"
     );
-
+    console.log(data);
+    console.log(error);
     const { stats } = data || {};
     useErrors([{ isError: error, error }]);
 
